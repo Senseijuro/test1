@@ -26,4 +26,11 @@ public class VoitureTest {
         assertEquals(1, voiture.getId());
     }
 
+    @Test
+    void afficherVoiture(){
+        Voiture voiture = new Voiture("Citroen", 15000);
+        voiture.setId(3);
+        assertEquals("Car{marque='Citroen', prix=15000, id=3}", voiture.toString());
+    }
+
 }
